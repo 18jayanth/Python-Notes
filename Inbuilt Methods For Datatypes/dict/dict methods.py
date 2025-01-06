@@ -27,8 +27,107 @@ print(d) #{'a':'b',44:55,'a':'b'}  =  {'a':'b',44:55}
 d.update({'a1',(33,22),'42'})
 print(d) # {'a':'1',44:55,33:22,'4':'2'}
 
-getmethod()
-This Method give the
+''' getmethod()
+1)This Method give the value for a key which is given as argument
+2)If the given key is not available in dictionary get method gives default value
+3)If default value not given,get  method gives None
+3)It returns the value
+Syntax:Vn.get(key) 
+Vn.get(key,defaultvalue) '''
+D={'a':1,44:55,33:22}
+print(D.get('a')) #1
+print(D.get(420)) #NOne
+print(D.get(420,200)) # 200
+
+'''
+3)Setupdate method():
+1)This Method give the value for a key which is given as argument
+2)If the given key is not available in dictionary get method gives default value
+3)If default value not given,setdefault method gives None and returns new key value pair to dictionary
+3)It returns the value
+'''
+Syntax: Vn.setdefualt(key) 
+Vn.setdefault(key,defaultvalue) 
+
+D={'a':1,44:55,33:22}
+print(D.get('a')) #1
+print(D.get(420)) #N0ne
+print(D) #{'a':1,44:55,33:22,420:None}
+print(D.get(320,120) #120
+
+
+Remove Methods
+
+1)pop()
+This method is used to remove single key value pair from dictionary
+If key is not available pop will return default value
+IF default is not given pop will return error
+pop returns value for the given key
+Syntax:Vn.pop(key)
+Vn.pop(key,default)
+
+D={'name':'jayanth','age':18}
+D.pop('age') #18
+print(D) #D={'name':'jayanth'}
+D.pop('gender') #error
+D.pop('gender','male') #'male
+
+2)popitem()
+This method is used to remove  last key value pair from dictionary
+popitem returns the last key-value pair in the form of tuple
+syntax:vn.popitem()
+D={"pushpa2":"1700CR","KGF2":"1100CR","BB2":"1800CR"}
+D.popitem() #{"BB2":"1800CR"}
+
+3)clear()
+This method removes all key-value pairs from dictionary
+This method returns None
+Syntax:varn.clear()
+D={'a':'b','b':'c'}
+D.clear()
+D #{}
+
+keys()
+This method gives all the keys from dictioanary
+Return type of keys method is list but it represents as dict_keys
+Syntax:Vn.keys()
+D={'a':'b','c':'d'}
+D.keys() #dict_keys(['a','c'])
+
+values()
+This method gives all the values  from dictioanary
+Return type of values  method is list but it represents as dict_values
+Syntax:Vn.values()
+D={'a':'b','c':'d'}
+D.values() #dict_values(['b','d'])
+
+items()
+This method gives all the key value pairs in a list and each key value pair stored in a tuple  
+
+Syntax:Vn.items()
+D={'a':'b','c':'d'}
+D.items() #dict_items([('a':'b'),('c':'d']))
+
+fromkeys
+This method is used to create multiple key value pairs with a common value
+This method represents keys in a sequence 
+No value given default value is NOne
+syntax: {}.fromkeys(keys as sequence,value)
+
+{}.fromkeys('pqrs',20)
+{'p':20,'q':20,'r':20,'s':20}
+
+{}.fromkeys({4,2,0,'e',(44,55)})
+{4:None,2:None,0:None,'e':None,(44,55):None}
+
+{}.fromkeys({'a':4,'b':24,'c':420},48)
+{'a':48,'b':48,'c':48}
+
+
+
+
+
+
 
 
   

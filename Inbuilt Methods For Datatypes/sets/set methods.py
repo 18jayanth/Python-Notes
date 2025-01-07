@@ -1,3 +1,28 @@
+#addition
+'''
+(i)add():
+This  is used to add only one element at random position (becuase unordered property)
+we can give only single value data or immutable data
+add method returns None
+Syntax:Vn.add(arg);
+'''
+s={4,True,'ab'}
+s.add(False)
+print(s) # {False,True,4,'ab'}
+s.add([3,4,5]) # type error
+s.add((33,44,55)) #{False,True,4,'ab',(33,44,55)}
+
+'''
+(ii)update():
+This method is used to add multiple elements in a set
+update method takes one argument which must be sequence
+The elements must be single value or  immutable date insight the sequence
+return type is None
+syntax Vn.update(seq)
+'''
+Re
+
+
 s={1,2,3,4}
 s.add(5)
 print(s) # 1 2 3 4 5 

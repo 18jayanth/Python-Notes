@@ -1,0 +1,21 @@
+""" 2. Write a program to input eight numbers from the user and display all the unique
+numbers (once)."""
+s=set()
+a=input("Enter 1st Value")
+s.add(a)
+a=input("Enter 2nd Value")
+s.add(a)
+a=input("Enter 3rd Value")
+s.add(a)
+a=input("Enter 4th Value")
+s.add(a)
+a=input("Enter 5th Value")
+s.add(a)
+a=input("Enter 6th Value")
+s.add(a)
+a=input("Enter 7th Value")
+s.add(a)
+a=input("Enter 8th Value")
+s.add(a)
+print(s)
+

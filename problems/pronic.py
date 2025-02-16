@@ -3,9 +3,9 @@ p1=0
 p2=1
 while p1*p2<=num:
     if p1*p2==num:
-        print(f"{p1},{p2} are consecutive factors to num")
+        print(f" {num} is a pronic number")
         break
     p1+=1
     p2+=1
 else:
-    print(f" {p1},{p2} are not consecutive factors to num")
+    print(f" { num} is not a pronic number")
